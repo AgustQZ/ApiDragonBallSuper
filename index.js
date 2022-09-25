@@ -1,6 +1,9 @@
 import { conexionFetch } from "./module/conexion_fetch.js";
-
-conexionFetch();
+import filtroBusqueda from "./module/filtro_busqueda.js";
 
 //si conexionFetch usara un evento se meteria dentro de este addEventListener.
-document.addEventListener("DOMContentLoaded", (e) => {});
+
+document.addEventListener("DOMContentLoaded", (e) => {
+    conexionFetch();
+    filtroBusqueda(".filtro-cartas", ".tarjeta");
+});

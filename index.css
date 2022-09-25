@@ -3,19 +3,28 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
-    place-items: center;
+    text-align: center;
+    /* place-items: center; */
 }
 
 .tarjeta {
     border: 1px solid gray;
     border-radius: 5px;
     width: 100%;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
 }
 
 .tarjeta img {
     height: 100px;
+}
+
+/* filtro */
+.filtrar {
+    display: none;
+    /*visibility: hidden;
+    opacity: 0;*/
+    order: 1;
 }
